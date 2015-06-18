@@ -33,13 +33,15 @@
 
     <!-- AngularJS -->
     <script src="js/angular.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/app.js"></script> 
-
+    <script src="js/main.js"></script> 
+    <script src="js/soundController.js"></script> 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="mainController as main">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -112,26 +114,29 @@
                     </div>
                     <div class="row wow slideInLeft">
                         <div class="col-md-4">
-                            <div class="siteOne"></div>
+                         <!--    <div class="siteOne" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></div> -->
+                             <img src='img/aware.png' class="img-thumbnail"/>
                      
                         </div>
                         <div class="col-md-4">
-                            <div class="siteTwo"></div>
+                          <!--   <div class="siteTwo"> -->
+                                <img src='img/eml.png' class="img-thumbnail"/>
+                           <!--  </div> -->
                         </div>
                         <div class="col-md-4">
-                            <div class="siteThree"></div>
+                         <!--    <div class="siteThree"> -->
+                                <img src='img/ttc.png' class="img-thumbnail"/>    
+                         <!--    </div> -->
                        
                         </div>
                     </div>
-
                     
 
-                    <!-- Large modal -->
-<!-- 
-                    <div class='view' ng-hide='view'>
-                        <div class='row'>
+                    <div class="collapse" id="collapseExample">
+                    <div class="well">
+                         <div class='row'>
                         <div class="col-md-4">A climate change dashboard utiliizing D3 data to chart the changes in environmental indictors over time are cyclical.</div>  
-                        <div class="col-md-4 col-md-offset-4"><ul>Technology Stack:
+                        <div class="col-md-4 col-md-offset-2"><ul>Technology Stack:
                         <li>D3.js </li>
                         <li>Ruby on Rails</li>
                         <li>Javascript</li>
@@ -141,6 +146,13 @@
                         <li>Heroku</li>
                         </ul>
                        </div> 
+                    </div>
+                    </div>
+
+                    <!-- Large modal -->
+<!-- 
+                    <div class='view' ng-hide='view'>
+                       
                       
                     
                     </div>
@@ -187,15 +199,22 @@
     </section>
 
     <!-- SOUND Section -->
-    <section id="sound" class="container content-section text-center">
+    <section id="sound" class="container content-section text-center"  ng-controller="soundController as soundCtrl">
         <div class="row">
             <div class="container">
                 
                     <div class="col-lg-8 col-lg-offset-2">
-                    <h2>SOUND</h2>
-                    <a href="http://imdb.com/name/nm4430213/?ref_=fn_al_nm_1">IMDB Credit List</a>              
+                    <h2 class='wow slideInLeft'>SOUND</h2>
+                    <a href="http://imdb.com/name/nm4430213/?ref_=fn_al_nm_1">IMDB Credit List</a>
+                    <div class='row'>
+                     <div class="posters" ng-repeat="credits in soundCtrl.credits">
+                        <img src="{{credits.poster || null}}" class="img-thumbnail"/>
+                     </div>      
                     </div>
-               
+
+                    </div>
+            
+             
             </div>
         </div>
   
