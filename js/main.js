@@ -33,10 +33,15 @@
         });
 
 
-     wow = new WOW({
-            mobile: false
-        });
-        wow.init();
+        wow = new WOW({
+                mobile: false
+            });
+            wow.init();
+
+            
+
+
+ 
         
 
 // }

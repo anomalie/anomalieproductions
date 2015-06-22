@@ -20,13 +20,7 @@
           console.log(ctrl.credits);
         });
 
-        // function poster(){
-        //   if credits === 'null'
-        //     return ''
-
-        //   }
-        // };
-
+        
 
 
      } 
