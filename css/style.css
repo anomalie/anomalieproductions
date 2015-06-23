@@ -22,9 +22,8 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
     font-family: 'Raleway', cursive;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 1px;
 
 }
@@ -155,6 +154,7 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 }
 
 .intro .intro-body {
@@ -269,23 +269,24 @@ a:focus {
     overflow-y: hidden;
     -webkit-box-shadow: inset 0 0 300px rgba(0,0,0,.5);
           box-shadow: inset 0 0 300px rgba(0,0,0,.5);
+    vertical-align: middle;
 }
 
 .content-section:nth-child(3n+3){
-    background-color: black;
+    background-color: #D7A227;
     background-size: cover;
     color: white;
     height:100%;
     width:100%;  
 }
 .content-section:nth-child(3n+2){
-    background-color: #D7A227;
+    background-color: black;
     background-size: cover;
     height:100%;
     width:100%;    
 }
 .content-section:nth-child(3n+1){
-    background-color: #AF2125;
+    background-color: #074B51;
     background-size: cover;
     height:100%;
     width:100%;    
@@ -390,8 +391,7 @@ body {
 
 .siteOne{
    height: 200px;
-   width: 260px; 
-   background-size: cover;
+   width: 260px;   
    padding: 10px;
    margin: 10px;
    
@@ -433,11 +433,27 @@ body {
 }
 
 .posters{
+    position:relative;
     color: black;
-    height: 100px;
+    height: 110px;
     width: 100px;
-    display: inline-block;
     border: 0px;
+    display:inline-block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.listOfCredits{
+    color:black;
+}
+
+.modal-title{
+    color:black;
+}
+
+.img-thumbnail{
+    border: 0 none;
+    box-shadow: none;
 }
 
 .resume{
@@ -448,27 +464,17 @@ body {
     max-width: 200px;
 }
 
-.img-thumbnail{
-    border: 0px;
-   /* box-shadow: 0 0 10px;*/
-}
+
 
 .clearfix {
-  clear: both;
+    clear: both;
 }
 
-.portfolio {
-  position: absolute;
-  margin-top: 10px;
-  padding: 100px;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  opacity: .80;
-  text-align: center;
-  font-size: 15px;
-  z-index: 2;
-  color: black;
-
-
+.table{
+    text-align: left;
+    padding: 10px;
+    margin: 3px;
 }
+
+
+
