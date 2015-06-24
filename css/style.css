@@ -43,19 +43,19 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: white;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 a:link {
-    color: orange;
+    color: #D7A227;
 }
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: white;
 }
 
 .light {
@@ -285,7 +285,6 @@ a:focus {
 .content-section:nth-child(4n+3){
     background-color: #D7A227;
     background-size: cover;
-    background-attachment: fixed;
     color: white;
     height:100%;
     width:100%;  
@@ -314,7 +313,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 170px;
+        padding-top: 150px;
         height: 100%;
         width: 100%;
         margin: 0 auto;
@@ -339,17 +338,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid orange;
-    color: orange;
+    border: 1px solid #D7A227;
+    color: #D7A227;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid orange;
+    border: 1px solid #D7A227;
     outline: 0;
-    color: #000;
-    background-color: orange;
+    color: #D7A227;
+    background-color: #34455E;
 }
 
 ul.banner-social-buttons {
@@ -363,6 +362,7 @@ ul.banner-social-buttons {
 }
 
 @media(max-width:767px) {
+
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
@@ -465,7 +465,7 @@ body {
 }
 
 .creditsView a{
-    color:orange;
+    color: #D7A227;
 
 }
 .listOfCredits{

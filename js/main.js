@@ -6,6 +6,14 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
+// Show Nav Title on Scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-brand").text("ANOMALIE PRODUCTIONS");
+    } else {
+        $(".navbar-brand").text("");
+    }
+});
 
 // Page scrolling feature - requires jQuery Easing plugin
 $(function() {
