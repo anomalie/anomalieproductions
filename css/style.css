@@ -4,6 +4,7 @@ body {
     font-family:'Journal';
     color: #fff;
     background-color: #000;
+
 }
 
 html {
@@ -27,6 +28,7 @@ h6 {
     font-family: 'Journal';
     letter-spacing: 1px;
     font-weight: bold;
+  
 
 }
 
@@ -63,7 +65,7 @@ a:focus {
 .light {
     font-weight: 400;
 }
-
+/*NAV BAR*/
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -143,7 +145,7 @@ a:focus {
         background: #000;
     }
 }
-
+/*Intro Page*/
 .intro {
     display: table;
     width: 100%;
@@ -191,11 +193,11 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .intro .intro-body .intro-text {
-        font-size: 24px;
+        font-size: 16px;
     }
 }
 
@@ -272,7 +274,7 @@ a:focus {
         transform: scale(1);
     }
 }
-
+/*Content*/
 .content-section {
     position: relative;
     padding-top: 100px;
@@ -387,13 +389,7 @@ ul.banner-social-buttons {
     }
 }
 
-footer {
-    padding: 50px 0;
-}
 
-footer p {
-    margin: 0;
-}
 
 ::-moz-selection {
     text-shadow: none;
@@ -418,7 +414,7 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
-
+/*Web*/
 .siteOne{
    height: 200px;
    width: 260px;   
@@ -462,6 +458,38 @@ body {
     cursor: pointer;
 }
 
+.mobileSite{
+    height: 110px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
+    padding: 18px;
+   
+}
+
+.mobileSite:hover{
+    opacity: .5;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+#mobileOne{
+    background-image: url(../img/aware2.png);
+    color: black;
+    padding-left: 40%
+}
+
+#mobileTwo{
+    background-image: url(../img/eml.png);
+    color: whitesmoke;
+}
+#mobileThree{
+    background-image: url(../img/ttc.png);
+    color: whitesmoke;
+}
+
+/*Sound*/
 .posters{
     position:relative;
     color: black;
@@ -486,8 +514,6 @@ body {
     color:black;
 
 }
-
-
 
 .modal-title{
     color:black;
