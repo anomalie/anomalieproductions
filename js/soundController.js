@@ -17,7 +17,7 @@
 
         promise.then(function(response){
           self.credits = response.data;
-          console.log(ctrl.credits);
+          console.log(this.credits);
         });
 
         

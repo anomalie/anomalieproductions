@@ -19,7 +19,7 @@
     <link href="css/modal.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='fonts/raleway_thin-webfont.woff' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -126,7 +126,7 @@
                             </div>
                         </div>    
                         <div class="col-xs-6 col-md-4 wow fadeInUpBig">
-                            <div class="thumbnail">
+                            <div class="thumbnail" id="card">
                                 <a href="https://emusiclessons.herokuapp.com" target="_blank">
                                 <img src='img/eml.png' class="siteTwo"/>
                                 <div class="caption">
@@ -137,7 +137,7 @@
                             </div>
                         </div>    
                         <div class="col-xs-6 col-md-4 wow fadeInRightBig">
-                            <div class="thumbnail">
+                            <div class="thumbnail" id="card">
                                 <a href="https://tictactoefbapp.firebaseapp.com" target="_blank">
                                 <img src='img/ttc.png' class="siteThree"/>   
                                 <div class="caption">
@@ -162,7 +162,7 @@
                     <h4>POST PRODUCTION SOUND EFFECTS | DIALOGUE | FOLEY | ADR | MUSIC EDITORIAL</h4>   
             <div class='row posters hidden-xs' ng-repeat='credits in soundCtrl.credits' ng-if='credits.poster'>                        
                 <div class='col-md-12'>
-                <img src="{{credits.poster}}" class='img-thumbnail' alt="{{credits.title}}"/>
+                <img src="{{credits.poster}}" class='img-responsive' alt="{{credits.title}}"/>
                 </div>
             </div>
             <div class="row creditsView">
@@ -172,7 +172,7 @@
                 </button>
 
                 <button type="button" class="btn btn-default"> 
-                <a href="http://imdb.com/name/nm4430213/?ref_=fn_al_nm_1" target="_blank">LINK TO IMDB</a>
+                <a href="http://imdb.com/name/nm4430213/?ref_=fn_al_nm_1" target="_blank">IMDB</a>
                 </button>
            
             </div>
