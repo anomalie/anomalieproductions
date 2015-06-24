@@ -276,6 +276,7 @@ a:focus {
 }
 /*Content*/
 .content-section {
+
     position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -339,6 +340,12 @@ a:focus {
 
     }
 
+}
+
+@media(min-width: @screen-sm-min){
+    .content-section{
+        font-size: 16px;
+    }
 }
 
 
@@ -459,7 +466,7 @@ body {
 }
 
 .mobileSite{
-    height: 110px;
+    height: 100px;
     width: 100%;
     background-position: center;
     background-size: cover;
