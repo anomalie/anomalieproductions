@@ -278,7 +278,7 @@ a:focus {
 .content-section {
 
     position: relative;
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
     margin: 0 auto;
     background-size: cover;
@@ -293,32 +293,35 @@ a:focus {
 .content-section:nth-child(4n+4){
     background-color: #074B51;
     background-size: cover;
-    background: url(../img/dadspainting.jpg) no-repeat center scroll; 
+    background: url(../img/dadspainting.jpg) no-repeat center;
+    background-attachment: fixed; 
     vertical-align: middle;
     height:100%;
     width:100%;    
 }
 .content-section:nth-child(4n+3){
-    background-color: #D7A227;
+    background-color: honeydew;
     background-size: cover;
     color: white;
     height:100%;
-    width:100%;  
+    width:100%;
+    color:black;  
 }
 .content-section:nth-child(4n+2){
     background-color: black;
-    background: url(../img/dadspainting.jpg) no-repeat center scroll;
+    background: url(../img/dadspainting.jpg) no-repeat center;
+    background-attachment: fixed;
     background-size: cover;
     height:100%;
     width:100%;    
 }
 .content-section:nth-child(4n+1){
-    background-color: #D7A227;
+    background-color: honeydew;
     background-size: cover;
-    background-attachment: fixed;
     vertical-align: middle;
     height:100%;
-    width:100%;    
+    width:100%;
+    color:black;    
 }
 
 
